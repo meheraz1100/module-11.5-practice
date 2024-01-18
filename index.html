@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS priority</title>
     <style>
+        #second{
+            color: goldenrod;
+        }
         *{
-            color: gold;
+            color: lightgreen !important;
+        }
+        .purple{
+            color: purple;
         }
         h3{
             color: fuchsia;
@@ -19,8 +25,8 @@
 </head>
 <body>
     <h3>My awesome heading 1</h3>
-    <h3>My awesome heading 2</h3>
-    <h3>My awesome heading 3</h3>
+    <h3 style="color: red;"  id="second" class="purple">My awesome heading 2</h3>
+    <h3 class="purple">My awesome heading 3</h3>
     <h3>My awesome heading 4</h3>
 </body>
-</html>
+</html> 
